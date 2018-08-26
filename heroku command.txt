@@ -1,0 +1,7 @@
+F:\Python\bio>git init
+F:\Python\bio>git status
+F:\Python\bio>git add --all .
+F:\Python\bio>git config --global user.email "azad.ocp@gmail.com"
+F:\Python\bio>git commit -m "First Commit! Finalize full site in Flask"
+F:\Python\bio>git remote add origin https://github.com/azadbd/azad.space.flask.git
+F:\Python\bio>git push -u origin master
