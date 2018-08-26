@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+crcvenv
+db.sqlite3
+.DS_Store
+flask_session

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Currency Current Rate | Currency Conversion | Forex {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min413.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='js/bootstrap.min413.js') }}">
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8289078927155927",
+              enable_page_level_ads: true
+         });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="logo" style="float:left;"><a class="navbar-brand" href="/">C R C</a><p>Currency Rate Converter</p></div>
+		</div>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="http://www.azad.space">Home</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="header-text"><h1>{{ headlines }}</h1></div>
+    </div>
+  </div>
+</div>
+
+<div class="centerbody">
+	<div class="container">
+		<div class="row">
+			<div class="column side">
+				<p>
+				CRC is an online currency rate converter web apps- <a href="https://m.do.co/c/b2399e32cc70">Powered by DigitalOcean VPS</a>. CRC collect Real-time exchange rate data for
+				170 world currencies, updated every 60 seconds using
+				<i>Fixer Foreign exchangen rates and currency conversion JSON API.</i>
+				Currency data delivered by Fixer is sourced from financial data providers and banks, including the European Central Bank.
+				</p>
+			</div>
+			
+			<div class="column middle">
+			
+				{% block content %} {% endblock %}
+			</div>
+			
+			<div class="column side">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- responsive -->
+				<ins class="adsbygoogle"
+				style="display:block"
+				data-ad-client="ca-pub-8289078927155927"
+				data-ad-slot="6986905320"
+				data-ad-format="auto"
+				data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <p>&copy; <a href="http://arshin-tech.com" target="_blank">ArshinTech</a>&nbsp;| &nbsp;<a href="https://m.do.co/c/b2399e32cc70">Powered by DigitalOcean VPS</a>
+	  </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
