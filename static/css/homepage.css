@@ -33,16 +33,16 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 .name                    { font-size: 9em; font-weight: 700;}
 .plate                   { margin:2% 10% 0 9%; border-top: 2px solid #fff; border-radius: 3px; border-bottom: 2px solid #fff; border-radius: 3px;}
 .shadow                  { color:#fff; font-family:Arvo; font-weight:bold;
-  text-shadow:
-    -3px -3px 0 #222,
-     3px -3px 0 #222,
-    -3px 3px 0 #222,
-     3px 3px 0 #222,
-     4px 4px 0 #fff,
-     5px 5px 0 #fff,
-     6px 6px 0 #fff,
-     7px 7px 0 #fff;
-    line-height: 0.8em;letter-spacing: 0.1em;transform: scaleY(0.7);-webkit-transform: scaleY(0.7);-moz-transform: scaleY(0.7);margin:0;text-align: center;}
+																		  text-shadow:
+																			-3px -3px 0 #222,
+																			 3px -3px 0 #222,
+																			-3px 3px 0 #222,
+																			 3px 3px 0 #222,
+																			 4px 4px 0 #fff,
+																			 5px 5px 0 #fff,
+																			 6px 6px 0 #fff,
+																			 7px 7px 0 #fff;
+																			line-height: 0.8em;letter-spacing: 0.1em;transform: scaleY(0.7);-webkit-transform: scaleY(0.7);-moz-transform: scaleY(0.7);margin:0;text-align: center;}
 .script {font-family: "Seaweed Script";color: #fff;text-align: center;font-size: 40px;position: relative;margin:0;}
 .script span {background-color: #222;padding: 0 0.3em;}
 .script:before {content:"";display: block;position: absolute;z-index:-1;top: 50%;width: 100%;border-bottom: 3px solid #fff;}
@@ -198,6 +198,7 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
     .menu ul li:last-child  { padding-right: 5px;}
     .column.left-col img    { height:50px;width: 50px; margin:0; padding: 0; float: left;}
     .hbar  h2               { font-size: 1.5em;}
+	.social    				{width:35px; height:35px; line-height: 35px; margin-right: 15px;font-size: 1.3em;}
 
     /*Name*/
     h2                      { font-size: 1.1em;}
@@ -229,10 +230,8 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 
     #portfolio            { overflow:auto;}
     #portfolio .prj-name  { width: 95%; margin:6px; padding: 0}
-    #portfolio .crc       { display:block; width:100%; margin: 10% auto 0;}
-    #portfolio .fstc      { display:block; width:100%; margin: 0 auto;}
-    #portfolio .arshintech{ display:block; width:100%; margin: 0 auto;}
-
+    #portfolio .prj-container{ display:block; width:100%; margin: 10% auto 0;}
+    
     #contact              { overflow:auto;}
     #contact .left        { display: block; width: 100%; padding-left:3%;}
     #contact .right       { display: block; width: 100%; padding-left:3%;height: auto;overflow: auto;}
