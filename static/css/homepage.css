@@ -2,7 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Oxygen:300,400,700);
 *                        {box-sizing: border-box;}
 body                     { font-family: 'PT Sans', Helvetica, sans-serif; font-size: 16px;}
+/*body 					 { background-color: #161619; background-image: radial-gradient(rgba(240, 240, 255, .1), rgba(20, 20, 30, .1) 60%), repeating-linear-gradient(40deg, #222, #222, 3px, #252525 3px, #252525 6px);}*/
 body, html               { height: 100%;  color: #fff;}
+
 h1, h2, h3, h4, h5, h6   { font-weight: 500;line-height: 1.5em;margin-top: 0;margin-bottom: 10px;}
 em                       { color:#fff;}
 a                        { color:#f43404; text-decoration: none;}
@@ -11,7 +13,7 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 .main-container          { height:100%;width: 100%; float: left; display: inline-block;}
 
 .column                  { float:left;}
-.column.left-col         { height:100vh; width: 20%; background-color: #222; text-align: center;}
+.column.left-col         { height:100%; height:100vh; width: 20%; background-color: #222; text-align: center;}
 .column.right-col        { height:100%; width: 80%; background-color: #222; border-left: 1px solid #fff;}
 .column.left-col img     { display:inline-block; width:130px; height:130px; border:1px solid #444;border-radius: 100%;}
 .column.left-col .img    { margin:0 auto; text-align:center;}
@@ -29,7 +31,7 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 /*Name*/
 .name-container          { display: block; margin:0 auto; text-align: center;line-height: 1;color:#c18203;}
 .name                    { font-size: 9em; font-weight: 700;}
-.plate                   { margin:2% 1% 0 0; border: 2px solid #fff; border-radius: 3px;}
+.plate                   { margin:2% 10% 0 9%; border-top: 2px solid #fff; border-radius: 3px; border-bottom: 2px solid #fff; border-radius: 3px;}
 .shadow                  { color:#fff; font-family:Arvo; font-weight:bold;
   text-shadow:
     -3px -3px 0 #222,
@@ -99,10 +101,8 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 
 #portfolio            { display: none;margin-left: 1%; height: 100%;}
 #portfolio a          { color:#fff;}
-#portfolio .crc       { width:33.33%; float:left; left;margin-top:5%; }
-#portfolio .fstc      { width:33.33%; float:left; left;margin-top:5%;}
-#portfolio .arshintech{ width:33.33%; float:left; left;margin-top:5%;}
-#portfolio .prj-name  { width:90%; margin: 0 5px; padding: 0 5px 25px; height: 200px;text-align: center;border: 3px solid #333; background-image: repeating-radial-gradient(#eee, #fff 50%); color:#222; font-weight:700;}
+#portfolio .prj-container { width:33.33%; float:left; left;margin-top:5%; }
+#portfolio .prj-name  { width:90%; margin: 0 5px; padding: 0 5px 25px; height: 200px;text-align: center;border: 3px solid #333; background-color: #fff; background-image: linear-gradient(60deg, #222, #999);  color:#222; font-weight:700;}
 #portfolio .prj-name:hover{ background-image: repeating-radial-gradient(#fff, #eee 50%); color:#222;}
 #portfolio .prj-name p:nth-child(2) {line-height:6; vertical-align: baseline; font-size:.7em;}
 
