@@ -62,9 +62,7 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 #about .left img  {border:2px solid #333; padding: 3%; border-radius: 5px;}
 #about .right p   {padding-right: 20px; justify-content: center;color:#999; line-height: 1.25em;}
 #about .right h2  {color:#fff;}
-#about .social    {display: inline-block; width: 40px; height: 40px; line-height: 40px; text-align: center; vertical-align: middle; border: 1px solid #333; border-radius: 1px;margin-right: 20px;font-size: 1.5em; color:#888;}
-#about .social:hover{background-color: #f43404;color:#fff;}
-#about .social a  {text-decoration: none; color:#999;}
+
 
 #skill            {display: none;margin-left: 1%;height: 100%;}
 #skill .left      {width: 50%; display: inline-block;float:left; padding-right: 3%; margin-top:5%;}
@@ -189,16 +187,17 @@ ul                       { list-style: none; padding-left: 30px; -webkit-padding
 
 /* Responsive layout*/
 @media (max-width: 768px) {
+	ul 						{padding-left:10px;}
     .column                 { padding: 0px;}
     .column.left-col        { width: 100%; height: 50px; padding: 0; margin:0;}
     .column.right-col       { width: 100%; border: none;}
-    .menu                   { width: 80%; display: inline-block;  float:right; font-size: .7em; text-align: right;}
-    .menu ul                { -webkit-padding-start:5px; }
+    .menu                   { width: 80%; display: inline-block;  float:right; font-size: .5em; text-align: right;}
+    .menu ul                { padding-left:10px; -webkit-padding-start:5px; }
     .menu ul li             { display: inline; padding: 0 2px;border: none;}
     .menu ul li:last-child  { padding-right: 5px;}
     .column.left-col img    { height:50px;width: 50px; margin:0; padding: 0; float: left;}
     .hbar  h2               { font-size: 1.5em;}
-	.social    				{width:35px; height:35px; line-height: 35px; margin-right: 15px;font-size: 1.3em;}
+	.social    				{width:35px; height:35px; line-height: 35px; margin-right: 10px;font-size: 1.3em;}
 
     /*Name*/
     h2                      { font-size: 1.1em;}
