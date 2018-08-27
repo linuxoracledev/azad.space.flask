@@ -19,3 +19,8 @@ var divs = ["home", "about", "skill", "testimonial", "service", "portfolio", "co
         }
       }
     }
+	
+	function showContactDiv() {
+		  div = document.getElementById("contact");
+          div.style.display = "block"; 
+    }
