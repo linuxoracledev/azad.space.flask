@@ -1,13 +1,40 @@
 App Name: azadbd
 eMail arshintechbd@gmail.om
 Pass:M.k.@.9.9
+
+
+------------GIT------------------------------
 F:\Python\bio>git init
 F:\Python\bio>git status
 F:\Python\bio>git add --all .
 F:\Python\bio>git config --global user.email "azad.ocp@gmail.com"
 F:\Python\bio>git commit -m "First Commit! Finalize full site in Flask"
 F:\Python\bio>git remote add origin https://github.com/azadbd/azad.space.flask.git
+
+https://github.com/azadbd/azad.space.flask.git
+
 F:\Python\bio>git push -u origin master
 
+--------------------HEROKU-------------------------------------
+Deploy to heroku 
+
+C:\Users\azad>heroku login
+heroku: Enter your login credentials
+Email [arshintechbd@gmail.com]:
+Password: *********
+Logged in as arshintechbd@gmail.com
+
+
+C:\Users\azad>cd E:\Development\Python\azadbd
+
+E:\Development\Python\azadbd>git push heroku master
+Counting objects: 6, done.
+.............................
+remote:        https://azadbd.herokuapp.com/ deployed to Heroku
+.............................
+
+
+
+
 Cloning the git repository
-heroku git:clone -a APP-NAME
+E:\Development\Python\azadbd>heroku git:clone -a azadbd

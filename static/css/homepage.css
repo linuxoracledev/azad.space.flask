@@ -8,14 +8,9 @@ body, html               { height: 100%;  color: #fff;}
 h1, h2, h3, h4, h5, h6   { font-weight: 500;line-height: 1.5em;margin-top: 0;margin-bottom: 10px;}
 em                       { color:#fff;}
 a                        { color:#f43404; text-decoration: none;}
-a:hover                  { color:#fc300c;}
+a:hover                  { color:#ffff00;}
 ul                       { list-style: none; padding-left: 30px; -webkit-padding-start: 30px;}
-div.disabled
-{
-  pointer-events: none;
-  opacity: 0.5;
-  background: #CCC;
-}
+div.disabled             { pointer-events: none; opacity: 0.5; background: #CCC;}
 .main-container          { height:100%;width: 100%; float: left; display: inline-block;}
 
 .column                  { float:left;}
@@ -116,7 +111,7 @@ div.disabled
 #contact .left  div   { display: table-row;}
 #contact .left  p     { display: table-cell; text-align: right;}
 #contact .left  p span{ line-height: 2; vertical-align: middle; font-size: 1.5em; padding:0 15px; }
-#contact ul li span   { font-size:1.25em; color: #f43404; font-weight: 400;}
+#contact ul li span   { font-size:1.25em; color: #ffff00; font-weight: 400;}
 .contact-form {	position: relatiform-controlve; 	border: medium none !important;
 }
 
@@ -237,7 +232,7 @@ div.disabled
     #portfolio            { overflow:auto;}
     #portfolio .prj-name  { width: 95%; margin:6px; padding: 0}
     #portfolio .prj-container{ display:block; width:100%; margin: 10% auto 0;}
-    
+
     #contact              { overflow:auto;font-size:14px;}
     #contact .left        { display: block; width: 100%; padding-left:3%;}
     #contact .right       { display: block; width: 100%; padding-left:3%;height: auto;overflow: auto;}
