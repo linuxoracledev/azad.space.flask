@@ -57,12 +57,12 @@ div.disabled             { pointer-events: none; opacity: 0.5; background: #CCC;
 .social a  {text-decoration: none; color:#999;}
 
 
-#about            {display: none;margin-left: 1%;height: 100%; color:#444;overflow: auto;}
+#about            {display: none;margin-left: 1%; height: 100%; color:#777; overflow: auto;}
 #about .left      {width: 40%; display: inline-block;float:left; margin-top:5%;}
 #about .right     {width: 60%; display: inline-block;float:left; margin-top:5%;}
 #about .left img  {border:2px solid #333; padding: 3%; border-radius: 5px;}
 #about .right p   {padding-right: 20px; justify-content: center;color:#999; line-height: 1.25em;}
-#about .right h2  {color:#fff;}
+#about .right h2  {color:#fff;display: inline-block;}
 
 
 #skill            {display: none;margin-left: 1%;height: 100%;}
@@ -95,7 +95,7 @@ div.disabled             { pointer-events: none; opacity: 0.5; background: #CCC;
 #service .col         { box-sizing: border-box; width:25%; float:left; text-align: center; margin-top:5%; }
 #service .col p       { padding: 0 5px;}
 #service .content     { overflow:auto;}
-.service .fa          { display:block; width:120px; height:120px; font-size: 70px; text-align: center; padding:10%; color: #eee; background-color: #333; border: 3px solid #6a6969; border-radius: 100%; margin: 0 auto; }
+.service .fa          { display:block; width:150px; height:15,0px; font-size: 70px; text-align: center; padding:10%; color: #eee; background-color: #333; border: 3px solid #6a6969; border-radius: 100%; margin: 0 auto; }
 .service .fa:hover    { color: #fff; background-color: #f43404; border: 3px solid #555; -moz-transition:all .8s; -webkit-transition:all .8s; transition:all .8s;}
 
 #portfolio            { display: none;margin-left: 1%; height: 100%;}
