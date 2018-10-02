@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/crc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min413.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='js/bootstrap.min413.js') }}">
+    
+</head>
+<body>
+<div class="centerbody">
+	<div class="container">
+		<div class="row">
+			<div style="z-index:1; margin:200px auto auto auto; text-align:center;line-height:2;">
+				{% block content %} 
+					<span>
+						{% with messages = get_flashed_messages() %}
+						  {% if messages %}
+							{% for message in messages %}
+							  {{ message }}
+							{% endfor %}
+						  {% endif %}
+						{% endwith %}
+					</span>
+					<br>
+					<a href="/">Back</a>
+				{% endblock %}
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

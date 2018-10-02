@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 formcontainer">
+            <div class="formbox">
+                <table>
+
+                    <tr>
+                      <td><span class="theader">BASE CURRENCY </span></td><td> : </td><td><span class="theader"> {{ basecurrency }}  (1 EUR = {{ baserate }} {{ basecurrency }} )</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="theader">TIMESTAMP(UTC)</span></td><td> : </td><td><span class="theader"> {{ tstamp }}</span></td>
+                    </tr>
+
+                    {% for key, value in data.items() %}
+                    <tr>
+                        {% if key|upper == "DATE" %}
+                         <td><span class="theader">{{ key|upper }}</span></td> <td> : </td><td><span class="theader">{{ value }}</span> </td>
+                        {% endif %}
+                      {% if key|upper == "TIMESTAMP"  %}
+                         <td><span class="theader">{{ key|upper }}(Unix)</span></td> <td> : </td><td><span class="theader">{{ value }} </span></td>
+                        {% endif %}
+
+                   </tr>
+                   {% endfor %}
+
+                <tr>
+                  <td colspan="3" style="text-align:left; font-size:.6em;">
+                    Here timestamp is a standard UNIX time stamp indicating the time the given exchange rate data was
+                    collected, date the given exchange rate data was collected
+
+                  </td>
+                </tr>
+
+                {% for key, value in data.items() %}
+                  {% if value is mapping %}
+                       {% for k, v in value.items() %}
+                        <tr>
+                          <td>{{ k }}</td>
+                          <td> : </td>
+                          <td>
+                            {% if  baserate >= 1 %}
+                               {{  (v  / baserate)|round(6) }}
+                            {% else %}
+                               {{ (baserate * v)|round(6) }}
+                             {% endif %}
+                          </td>
+                        </tr>
+                       {% endfor %}
+                   {% endif %}
+                {% endfor %}
+              </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
