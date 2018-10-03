@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Seaweed+Script);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Oxygen:300,400,700);
 *                        {box-sizing: border-box;}
-body                     { font-family: 'PT Sans', Helvetica, sans-serif; font-size: 16px;}
+body                     { font-family: "Exo 2",Arial,sans-serif; font-size: 16px;}
 /*body 					 { background-color: #161619; background-image: radial-gradient(rgba(240, 240, 255, .1), rgba(20, 20, 30, .1) 60%), repeating-linear-gradient(40deg, #222, #222, 3px, #252525 3px, #252525 6px);}*/
 body, html               { height: 100%;  color: #fff;}
 
@@ -92,10 +92,10 @@ div.disabled             { pointer-events: none; opacity: 0.5; background: #CCC;
 .author               { display: inline-block; margin-top: -10px;line-height: normal;}
 
 #service              { display: none;margin-left: 1%;height: 100%;}
-#service .col         { box-sizing: border-box; width:25%; float:left; text-align: center; margin-top:5%; }
-#service .col p       { padding: 0 5px;}
+#service .col         { box-sizing: border-box; width:50%; float:left; text-align: center; margin-top:2%; }
+#service .col p       { padding: 0 3px;}
 #service .content     { overflow:auto;}
-.service .fa          { display:block; width:150px; height:15,0px; font-size: 70px; text-align: center; padding:10%; color: #eee; background-color: #333; border: 3px solid #6a6969; border-radius: 100%; margin: 0 auto; }
+.service .fa          { display:block; width:140px; height:140px; font-size: 70px; text-align: center; padding:5%; color: #eee; background-color: #333; border: 3px solid #6a6969; border-radius: 50%; margin: 0 auto; }
 .service .fa:hover    { color: #fff; background-color: #f43404; border: 3px solid #555; -moz-transition:all .8s; -webkit-transition:all .8s; transition:all .8s;}
 
 #portfolio            { display: none;margin-left: 1%; height: 100%;}
