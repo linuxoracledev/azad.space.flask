@@ -39,9 +39,9 @@
             <li><a href="#" onclick="divVisibility('home')">Home</a></li>
             <li><a href="#" onclick="divVisibility('about')">About</a></li>
             <li><a href="#" onclick="divVisibility('skill')">Skills</a></li>
-            <li><a href="#" onclick="divVisibility('portfolio')">Portfolio</a></li>
-            <li><a href="#" onclick="divVisibility('service')">Services</a></li>
             <li><a href="#" onclick="divVisibility('testimonial')">Testimonial</a></li>
+            <li><a href="#" onclick="divVisibility('service')">Services</a></li>
+            <li><a href="#" onclick="divVisibility('portfolio')">Portfolio</a></li>
             <li><a href="#" onclick="divVisibility('contact')">Contact</a></li>
             <li> <a href="http://codernote.azad.space" target="_blank">Blog</a></li>
         </ul>
@@ -54,18 +54,18 @@
         <div class="hbar"><h2>Home</h2> </div>
           <div class="name-container">
               <div class="plate">
-                <p class="script"><span>Self Paced Learner</span></p>
-                <p class="shadow text1">M.A.K</p>
-                <p class="shadow text2">AZAD</p>
-                <p class="shadow text3">artful</p>
                 <p class="script"><span>Curious Programmer</span></p>
+                <p class="shadow text1">MAK</p>
+                <p class="shadow text2">AZAD</p>
+                <p class="shadow text3">ARTFUL</p>
+                <p class="script"><span>Self Paced Learner</span></p>
               </div>
           </div>
       </div>
       <div id ="about">
         <div class="hbar"><h2>About</h2></div>
-            <div class="left" style="text-align:center">
-              <img  src="{{ url_for ('static', filename='images/azad.png') }}">
+            <div class="left">
+              <img src="{{ url_for ('static', filename='images/azad.png') }}">
             </div>
             <div class="right">
                   Hello! My name is<br /><h2>Mohammad Abul Kalam Azad</h2>&nbsp;People call me  as azad- আজাদ<br /> living and working in Dhaka, Bangladesh.
@@ -91,7 +91,7 @@
       <div id ="skill">
         <div class="hbar"><h2>Skills</h2></div>
         <div class="left">
-        <h3>Databases Skills</h3>
+        <h3>Database &amp; Language Skills</h3>
           <div class="skill-bar">
                 <div class="skill-1">Oracle</div>
           </div>
@@ -101,7 +101,6 @@
           <div class="skill-bar">
                 <div class="skill-3">PostgreSQL</div>
           </div>
-            <h3>Programming Language Skills</h3>
           <div class="skill-bar">
                 <div class="skill-6">Python</div>
           </div>
@@ -121,7 +120,7 @@
         </div>
 
         <div class="right">
-        <h3>Framework Skills</h3>
+        <h3>Framework  &amp; Others Skills</h3>
           <div class="skill-bar">
                 <div class="skill-6">DJango</div>
           </div>
@@ -131,7 +130,6 @@
           <div class="skill-bar">
                 <div class="skill-3">Bootstrap</div>
           </div>
-            <h3>Others Skills</h3>
           <div class="skill-bar">
                 <div class="skill-1">Oracle Forms &amp; Reports</div>
           </div>
@@ -235,15 +233,6 @@
               </a>
             </div>
 
-              <div class="prj-container">
-              <a href="http://olvdc.herokuapp.com/" target="_blank">
-                <div class="prj-name">
-                  <p>Video Converter</p>
-                  <p>Python(DJango)- Web Apps</p>
-                </div>
-              </a>
-            </div>
-
             <div class="prj-container">
               <a href="http://www.fstcfashion.com" target="_blank">
                 <div class="prj-name">
@@ -257,7 +246,7 @@
               <a href="http://www.arshin-tech.com" target="_blank">
                 <div class="prj-name">
                   <p>ArshinTech</p>
-                  <p>PHP- Website/WebApps</p>
+                  <p>PHP Website/WebApps</p>
                 </div>
               </a>
             </div>
