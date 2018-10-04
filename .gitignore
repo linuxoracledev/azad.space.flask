@@ -5,6 +5,5 @@ biovenv
 db.sqlite3
 message.db
 .DS_Store
-.idea
 flask_session
 \heroku command.txt
