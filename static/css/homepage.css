@@ -185,9 +185,9 @@ div.disabled             { pointer-events: none; opacity: 0.5; background: #CCC;
 }
 .responsiveimg {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: 100%;
-  max-height:600px;
+  max-height:550px;
 }
 
 /*Comments form style end*/
